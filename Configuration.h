@@ -39,7 +39,7 @@
 #define USE_EXT_MODE_DCF_DEBUG
 
 // Alle Sprachen einstellbar machen. Ansonsten nur deutsche Sprachen verfügbar (alle CH, alle DE)
-//#define ENABLE_ALL_LANGUAGES
+#define ENABLE_ALL_LANGUAGES
 
 /*
  * Zusätzliche Schalter, um neue Zusatzfunktionen ein- bzw. auszuschalten.
@@ -87,19 +87,19 @@
  * Welches Board wird benutzt? Wird aktuell nur für das Pinmapping von LPD8806 und Neopixel gebraucht
  */
 #define BOARD_DEFAULT
-//#define BOARD_CLT
+#define BOARD_CLT
 //#define BOARD_BBRTCAD
 //#define BOARD_AMBBRTCAD
 
 /*
  * Welcher LED-Treiber soll benutzt werden?
  */
-#define LED_DRIVER_DEFAULT
+//#define LED_DRIVER_DEFAULT
 // #define LED_DRIVER_UEBERPIXEL
 // #define LED_DRIVER_POWER_SHIFT_REGISTER
 // #define LED_DRIVER_NEOPIXEL
 // #define LED_DRIVER_DOTSTAR
-// #define LED_DRIVER_LPD8806
+ #define LED_DRIVER_LPD8806
 
 #if defined(LED_DRIVER_LPD8806) || defined(LED_DRIVER_NEOPIXEL)
 #define RGB_LEDS
@@ -116,17 +116,17 @@
 /*
  * Welche IR-Fernbedienung soll benutzt werden?
  */
-#define REMOTE_NO_REMOTE
+//#define REMOTE_NO_REMOTE
 //#define REMOTE_SPARKFUN
 //#define REMOTE_MOONCANDLES
 //#define REMOTE_LUNARTEC
-//#define REMOTE_CLT
+#define REMOTE_CLT
 
 // kann separat oder zusätzlich zu einer IR-Fernbedienung genutzt werden
-//#define REMOTE_BLUETOOTH
+#define REMOTE_BLUETOOTH
 
 // Möglichkeit um Events (Geburts-, Jahres-, Feiertage) mit Laufschrift und Effekt zu konfigurieren
-#define EVENTS
+//#define EVENTS
 
 /*
  *
