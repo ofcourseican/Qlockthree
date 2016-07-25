@@ -99,7 +99,7 @@ void MyRTC::readTime() {
         _dayOfWeek = 1;
         _date = 1;
         _month = 1;
-        _year = 2014;
+        _year = 16;
     }
 
     DEBUG_PRINT(F("Time: "));

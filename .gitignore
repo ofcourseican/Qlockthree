@@ -15,6 +15,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
+*.hex
 
 # External tool builders
 .externalToolBuilders/
